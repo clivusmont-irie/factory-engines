@@ -1,21 +1,31 @@
 {
   "name": "factory-engines",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Schema-driven full-stack application generator",
+  "type": "module",
+  "main": "dist/cli/index.js",
   "directories": {
     "example": "examples",
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "dev": "ts-node src/cli/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "clean": "rm -rf dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/clivusmont-irie/factory-engines.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "code-generator",
+    "full-stack",
+    "schema-driven",
+    "typescript"
+  ],
+  "author": "clivusmont-irie",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/clivusmont-irie/factory-engines/issues"
