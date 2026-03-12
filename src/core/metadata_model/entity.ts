@@ -6,9 +6,33 @@
  */
 
 // This is your internal metadata model (from spec)
+export interface RawSchema {
+    database?: 'mysql' | 'postgres';
+    backend?: 'node' | 'python';
+    frontend?: 'react' | 'vue';
+    entities: {
+        [entityName: string]: {
+            table?: string;
+            fields: {
+                [fieldName: string]: {
+                    type: 'string' | 'int' | 'boolean' | 'date' | 'float';
+                    primary?: boolean;
+                    required?: boolean;
+                    unique?: boolean;
+                    foreignKey?: {
+                        entity: string;
+                        field: string;
+                    };
+                };
+            };
+        };
+    };
+}
+
 export interface Field {
     name: string;
     type: 'string' | 'int' | 'boolean' | 'date' | 'float';
+    length?: number;  
     primary?: boolean;
     required?: boolean;
     unique?: boolean;
