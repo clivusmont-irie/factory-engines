@@ -1,0 +1,37 @@
+{
+  "name": "factory-engines",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clivusmont-irie/factory-engines.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clivusmont-irie/factory-engines/issues"
+  },
+  "homepage": "https://github.com/clivusmont-irie/factory-engines#readme",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.4.0",
+    "jest": "^30.3.0",
+    "supertest": "^7.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3",
+    "dotenv": "^17.3.1"
+  }
+}
